@@ -1,6 +1,7 @@
 name: MiniQtBuilds
 
 on:
+  push:
   workflow_dispatch:
   
 jobs:
@@ -16,4 +17,4 @@ jobs:
         env:
           VCINSTALLDIR: 'C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC'
         run: |
-          ./ps1
+          ./msvc2019-build6.10.2.ps1
